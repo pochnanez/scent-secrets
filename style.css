@@ -1,0 +1,425 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #F1F6F9;
+    color: #14274E;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #14274E;
+    padding: 15px 40px;
+    position: relative;
+}
+
+.nav-center {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-center a,
+.home-btn {
+    text-decoration: none;
+    color: #14274E;
+    font-size: 14px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.logo {
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #14274E;
+    text-decoration: none;
+}
+
+.home-btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    background-color: #14274E;
+    color: #F1F6F9;
+}
+
+.home-btn:active {
+    color: #F1F6F9;
+}
+
+.nav-right {
+    position: absolute;
+    right: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-right input {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid #14274E;
+    outline: none;
+}
+
+.filter-btn {
+    border-radius: 50%;
+    border: 1px solid #14274E;
+    background: none;
+    cursor: pointer;
+    padding: 6px 10px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px;
+}
+
+.banner-left {
+    width: 60%;
+}
+
+.banner-left h1 {
+    font-family: "Rubik One", sans-serif;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.description-box {
+    border: 2px solid #14274E;
+    border-radius: 120px;
+    padding: 40px 60px;
+    max-width: 680px;
+    text-align: justify;
+}
+
+.description-box p {
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+
+.banner-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-circle {
+    position: relative;
+    width: 400px;       
+    height: 400px;      
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-circle img {
+    width: 250px;       
+    height: 250px;
+    border-radius: 50%; 
+}
+
+.image-circle::after {
+    content: "";
+    position: absolute;
+    bottom: 28px;
+    width: 220px;
+    height: 28px;
+    background: rgba(57, 72, 103, 1); 
+    filter: blur(18px);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* TIPS PAGE */
+
+.tips-container {
+    padding: 60px 100px;
+    text-align: center;
+}
+
+.tips-title {
+    font-family: "Rubik One", sans-serif;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.tips-description {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.divider {
+    width: 60%;
+    margin: 30px auto;
+    border: 1px solid #14274E;
+}
+
+.tips-content {
+    text-align: left;
+    max-width: 900px;
+    margin: auto;
+}
+
+.tips-section {
+    margin-bottom: 40px;
+}
+
+.tips-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.tips-section ul {
+    padding-left: 20px;
+}
+
+.tips-section li {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.pagination {
+    margin-top: 40px;
+}
+
+.pagination a,
+.pagination span {
+    margin: 0 8px;
+    padding: 6px 12px;
+    border: 1px solid #14274E;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #14274E;
+    font-size: 13px;
+}
+
+.active-page {
+    background-color: #14274E;
+    color: #F1F6F9;
+}
+
+.active-btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    background-color: #14274E;
+    color: #F1F6F9;
+    border: none;
+}
+
+/* PERFUME TYPES PAGE */
+
+.perfume-container {
+    padding: 60px 0 80px;
+    text-align: center;
+}
+
+.perfume-title {
+    font-family: "Rubik One", sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.perfume-description {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.section-line {
+    width: 60%;
+    height: 1px;
+    background: #14274E;
+    margin: 30px auto 40px;
+}
+
+.accordion {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+
+.accordion-item {
+    border-top: 1px solid #14274E;
+}
+
+.accordion-item:last-child {
+    border-bottom: 1px solid #14274E;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.icon {
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.accordion-content {
+    display: none;
+    padding-bottom: 20px;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+/* SCENT FAMILIES PAGE */
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.accordion-header span {
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px 0 25px;
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.accordion-content p {
+    margin-bottom: 12px;
+}
+
+.accordion-content ul {
+    padding-left: 20px;
+}
+
+.accordion-content li {
+    margin-bottom: 8px;
+}
+
+.accordion-content {
+    overflow: hidden;
+}
+
+/* ABOUT PAGE */
+
+.about-section, .contact-section {
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.about-section h1, .contact-section h2 {
+    font-family: "Rubik One", sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p, .contact-section p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #14274E;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #14274E;
+    color: #F1F6F9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #394867;
+}
+
+/* FLOATING ANIMATION */
+@keyframes floatBounce {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Apply sa image */
+.image-circle img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation: floatBounce 2s ease-in-out infinite;
+}
+
+/* Shadow animation */
+@keyframes shadowBounce {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(0.85);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}
+
+.image-circle::after {
+    animation: shadowBounce 3s ease-in-out infinite;
+}

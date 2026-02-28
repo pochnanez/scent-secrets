@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABOUT</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="Homepage.html" class="logo">
+        SCENT-SECRETS
+    </a>
+    
+    <div class="nav-center">
+        <a href="Homepage.html">HOME</a>
+        <a href="Tips&Guides1.html">TIPS & GUIDES</a>
+        <a href="Perfume-Types.html">PERFUME TYPES</a>
+        <a href="Scent-Families.html">SCENT FAMILIES</a>
+        <button class="active-btn">ABOUT</button>
+    </div>
+
+    <div class="nav-right">
+        <input type="text" id="searchInput" placeholder="Search perfume...">
+        <button class="filter-btn" id="filterBtn">☰</button>
+    </div>
+</header>
+
+<section class="about-section">
+    <h1>About Scent Secrets</h1>
+    <p>
+        Scent Secrets is your ultimate guide to discovering the world of perfumes. 
+        We provide tips, insights, and fragrance knowledge to help you choose, apply, 
+        and enjoy perfumes that reflect your personality.
+    </p>
+    <p>
+        Our mission is to make the art of perfumery accessible, enjoyable, 
+        and fun for everyone—from beginners to fragrance enthusiasts.
+    </p>
+</section>
+
+<section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>
+        Got questions or suggestions? We'd love to hear from you! 
+        Fill out the form below and we'll get back to you as soon as possible.
+    </p>
+
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div id="form-success" style="display:none;">
+        Thank you for reaching out! We'll get back to you soon.
+    </div>
+</section>
+
+
+</body>
+</html>
